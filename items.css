@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*///////////////////////////////////////////////////*/
+.items_block {
+  padding-top: 38px;
+  justify-items: center;
+}
+
+.text_popular {
+  font-family: "Poppins", sans-serif, bold;
+  font-size: 48px;
+
+  color: white;
+  margin-bottom: 32px;
+}
+
+/*///////////////////////////////////////////////////*/
+
+.items_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 36px;
+  column-gap: 36px;
+}
+
+.item {
+  width: 320px;
+  height: 420px;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.item:hover {
+  transform: scale(1.1);
+}
+
+/*///////////////////////////////////////////////////*/
+
+.item_img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.favorite_img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+  right: 5%;
+  top: 3%;
+
+  transition: all ease 0.3s;
+}
+.favorite_img:hover{
+  transform: scale(1.2);
+}
+
+.item .text_section {
+  width: 100%;
+  height: 170px;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  
+  /* background-color: #383837; */
+}
+
+.text_section h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+
+  color: white;
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-left: 14px;
+}
+
+.text_section p {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+
+  color: white;
+  margin-left: 14px;
+}
+
+.text_section button {
+  width: 140px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  
+  transition: all ease 0.3s;
+}
+
+.text_section button:hover {
+  transform: translateX(-50%) scale(1.12);
+  background-color: #565656;
+  color: #ffffff;
+}
+
+/*///////////////////////////////////////////////////*/
+
+/* Контейнер для кнопок управления */
+.catalog_controls {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Кнопка */
+.dropbtn {
+  background-color: white;
+  color: #333;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: default; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.arrow {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+/* Выпадающее меню */
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 50;
+  border-radius: 15px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.dropdown_content p {
+  color: #333;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.dropdown_content p:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f9f9f9;
+}
+
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}

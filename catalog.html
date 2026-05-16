@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог - L'eclat</title>
+    <link rel="icon" href="icons/Leclat_icon.jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_index.css" />
+    <link rel="stylesheet" href="items.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="gradient" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
+
+    <header>
+      <div class="header_container glass">
+        <h1><a href="index.html">L'éclat</a></h1>
+        <nav>
+          <a href="catalog.html">Каталог</a>
+          <a href="favorites.html">Избранное</a>
+          <a href="cart.html">Корзина</a>
+          <a href="profile.html">Личный кабинет</a>
+        </nav>
+        <div class="icons">
+          <a href="favorites.html"><img src="icons/Favorite_white.svg" alt="Избранное" /></a>
+          <a href="cart.html"><img src="icons/Shopping Bag.svg" alt="Корзина" /></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="items_block">
+        <h1 class="text_popular">Каталог товаров</h1>
+
+        <div class="catalog_controls">
+          <div class="dropdown">
+            <div class="dropbtn">Все категории <span class="arrow">∨</span></div>
+            <div class="dropdown_content">
+              <p>Все категории</p>
+              <p>Помады</p>
+              <p>Туши</p>
+              <p>Парфюмерия</p>
+              <p>Хайлайтеры</p>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropbtn">Сортировать <span class="arrow">∨</span></div>
+            <div class="dropdown_content">
+              <p>Популярные</p>
+              <p>Дешевле</p>
+              <p>Дороже</p>
+              <p>Рейтинг</p>
+              <p>Новизна</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="items_container">
+          <div class="item glass">
+            <img class="favorite_img" src="icons/Favorite_black.svg" alt="favorite" />
+            <img class="item_img" src="img/items/item_1.png" alt="" />
+            <div class="text_section">
+              <h1>Туалетная вода <br /><b>DOLCE & GABBANA</b></h1>
+              <p>16590 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+
+          <div class="item glass">
+            <img class="favorite_img" src="icons/Favorite_black.svg" alt="favorite" />
+            <img class="item_img" src="img/items/item_2.png" alt="" />
+            <div class="text_section">
+              <h1>Парфюм <br /><b>CHANEL Chance</b></h1>
+              <p>12890 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+
+          <div class="item glass">
+            <img class="favorite_img" src="icons/Favorite_black.svg" alt="favorite" />
+            <img class="item_img" src="img/items/item_3.png" alt="" />
+            <div class="text_section">
+              <h1>Парфюм <br /><b>DIOR Sauvage</b></h1>
+              <p>14350 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+
+          <div class="item glass">
+            <img class="favorite_img" src="icons/Favorite_black.svg" alt="favorite" />
+            <img class="item_img" src="img/items/item_4.png" alt="" />
+            <div class="text_section">
+              <h1>Туалетная вода <br /><b>Bvlgari Omnia</b></h1>
+              <p>7740 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+
+          <div class="item glass">
+            <img class="favorite_img" src="icons/Favorite_black.svg" alt="favorite" />
+            <img class="item_img" src="img/items/item_5.png" alt="" />
+            <div class="text_section">
+              <h1>Парфюм <br /><b>Gucci Bloom</b></h1>
+              <p>9850 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+
+          <div class="item glass">
+            <img class="favorite_img" src="icons/Favorite_black.svg" alt="favorite" />
+            <img class="item_img" src="img/items/item_6.png" alt="" />
+            <div class="text_section">
+              <h1>Парфюм <br /><b>YSL Libre</b></h1>
+              <p>11990 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_container glass">
+        <div class="information">
+          <div class="information_block info">
+            <h1>L'eclat</h1>
+            <p>
+              Косметика, парфюмерия и уход премиум-класса — дополните свой образ
+              роскошью
+            </p>
+          </div>
+          <div class="information_block contacts">
+            <h1>Контакты</h1>
+            <ul>
+              <li><a href="">+7 (4942) 123-456</a></li>
+              <li><a href="">info@leclat.ru</a></li>
+            </ul>
+          </div>
+          <div class="information_block socials">
+            <h1>Соцсети</h1>
+            <ul>
+              <li><a href="">VK</a></li>
+              <li><a href="">Telegram</a></li>
+              <li><a href="">Max</a></li>
+            </ul>
+          </div>
+          <div class="information_block information_nav">
+            <h1>Разделы</h1>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="">Каталог</a></li>
+              <li><a href="">Избранное</a></li>
+              <li><a href="">Корзина</a></li>
+              <li><a href="profile.html">Личный кабинет</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rules">
+          <p>© 2026 L'eclat. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="importmap">
+      { "imports": { "@firecms/neat": "https://unpkg.com/@firecms/neat@latest/dist/index.js" } }
+    </script>
+    <script src="gradient.js" type="module"></script>
+  </body>
+</html>

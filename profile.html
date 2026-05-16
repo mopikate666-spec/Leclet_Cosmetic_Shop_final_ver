@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>L'eclat</title>
+    <link rel="icon" href="icons/Leclat_icon.png" type="x/icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_index.css" />
+    <link rel="stylesheet" href="user_info.css" />
+    <link rel="stylesheet" href="user_area.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <canvas
+      id="gradient"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      "
+    >
+    </canvas>
+
+    <header>
+      <div class="header_container glass">
+        <h1>
+          <a href="index.html">L'éclat</a>
+        </h1>
+        <nav>
+  <a href="catalog.html">Каталог</a>
+  <a href="favorites.html">Избранное</a>
+  <a href="cart.html">Корзина</a>
+  <a href="profile.html">Личный кабинет</a>
+</nav>
+        <div class="icons">
+  <a href="favorites.html">
+    <img src="icons/Favorite_white.svg" alt="Избранное" />
+  </a>
+  <a href="cart.html">
+    <img src="icons/Shopping Bag.svg" alt="Корзина" />
+  </a>
+</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="user_info glass">
+        <div class="user_picture">
+          <img src="icons/Profile.svg" alt="" />
+        </div>
+        <div class="user_about">
+          <div class="user_name">
+            <h1>Иванов Иван Иванович</h1>
+            <div class="edit glass">
+              <img src="/icons/Pencil.png" alt="" />
+            </div>
+          </div>
+          <div class="user_bonus">
+            <p>Бонусы: 50</p>
+            <img src="icons/Bonus.svg" alt="" />
+          </div>
+          <div class="user_progress">
+            <div class="progress glass">
+              <div class="progress_line"></div>
+              <div class="progress_dot"></div>
+              <div class="progress_dot"></div>
+              <div class="progress_dot"></div>
+              <div class="progress_dot"></div>
+            </div>
+            <div class="progress_text">
+              <p>0р</p>
+              <p>10000р</p>
+              <p>30000р</p>
+              <p>100000р</p>
+            </div>
+          </div>
+          <p id="discount_percent">Процент скидки: 5%</p>
+        </div>
+      </div>
+      <div class="user_area">
+        <div class="user_nav glass">
+          <ul>
+            <li><a href="">Профиль</a></li>
+            <li><a href="">Мои заказы</a></li>
+            <li><a href="">Избранное</a></li>
+            <li><a href="">Подарочные карты</a></li>
+            <li><a href="">Выйти</a></li>
+          </ul>
+        </div>
+        <div class="user_content">
+          <div class="user_actions">
+            <div class="tasks glass">
+              <h1>Купоны</h1>
+              <img src="/icons/Card_Coupon.svg" alt="" />
+            </div>
+            <div class="tasks glass">
+              <h1>Задания</h1>
+              <img src="/icons/Task.svg" alt="" />
+            </div>
+          </div>
+          <div class="user_actions_2 glass">
+            <h1>Подарочные карты</h1>
+            <img src="/icons/Gift.svg" alt="" />
+          </div>
+          <h1 id="ordered">Покупали ранее</h1>
+          <div class="item_block">
+            <div class="ordered_items_container">
+              <div class="ordered_item glass">
+                <img
+                  class="favorite_img"
+                  src="icons/Favorite_black.svg"
+                  alt="favorite"
+                />
+                <img class="item_img" src="img/items/item_1.png" alt="" />
+                <div class="text_section">
+                  <h1>
+                    Туалетная вода <br />
+                    <b>DOLCE & GABANNA</b>
+                  </h1>
+                  <p>16590 ₽</p>
+                  <button>В корзину</button>
+                </div>
+              </div>
+              <div class="ordered_item glass">
+                <img
+                  class="favorite_img"
+                  src="icons/Favorite_black.svg"
+                  alt="favorite"
+                />
+                <img class="item_img" src="img/items/item_2.png" alt="" />
+                <div class="text_section">
+                  <h1>
+                    Помада для губ <br />
+                    <b>ARTDECO perfect color</b>
+                  </h1>
+                  <p>1770 ₽</p>
+                  <button>В корзину</button>
+                </div>
+              </div>
+              <div class="ordered_item glass">
+                <img
+                  class="favorite_img"
+                  src="icons/Favorite_black.svg"
+                  alt="favorite"
+                />
+                <img class="item_img" src="img/items/item_3.png" alt="" />
+                <div class="text_section">
+                  <h1>
+                    Мусс для волос <br />
+                    <b>HEDO wonder</b>
+                  </h1>
+                  <p>2032 ₽</p>
+                  <button>В корзину</button>
+                </div>
+              </div>
+              <div class="ordered_item glass">
+                <img
+                  class="favorite_img"
+                  src="icons/Favorite_black.svg"
+                  alt="favorite"
+                />
+                <img class="item_img" src="img/items/item_4.png" alt="" />
+                <div class="text_section">
+                  <h1>
+                    Туалетная вода <br />
+                    <b>BvlgariOmnia Amethyste</b>
+                  </h1>
+                  <p>7740 ₽</p>
+                  <button>В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_container glass">
+        <div class="information">
+          <div class="information_block info">
+            <h1>L'eclat</h1>
+            <p>
+              Косметика, парфюмерия и уход премиум-класса — дополните свой образ
+              роскошью
+            </p>
+          </div>
+          <div class="information_block contacts">
+            <h1>Контакты</h1>
+            <ul>
+              <li>
+                <a href="">+7 (4942) 123-456</a>
+              </li>
+              <li>
+                <a href="">info@leclat.ru</a>
+              </li>
+            </ul>
+          </div>
+          <div class="information_block socials">
+            <h1>Соцсети</h1>
+            <ul>
+              <li>
+                <a href="">VK</a>
+              </li>
+              <li>
+                <a href="">Telegram</a>
+              </li>
+              <li>
+                <a href="">Max</a>
+              </li>
+            </ul>
+          </div>
+          <div class="information_block information_nav">
+            <h1>Разделы</h1>
+            <ul>
+              <li>
+                <a href="index.html">Главная</a>
+              </li>
+              <li>
+                <a href="">Каталог</a>
+              </li>
+              <li>
+                <a href="">Избранное</a>
+              </li>
+              <li>
+                <a href="">Корзина</a>
+              </li>
+              <li>
+                <a href="profile.html">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rules">
+          <p>© 2026 L'eclat. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@firecms/neat": "https://unpkg.com/@firecms/neat@latest/dist/index.js"
+        }
+      }
+    </script>
+    <script src="gradient.js" type="module"></script>
+  </body>
+</html>

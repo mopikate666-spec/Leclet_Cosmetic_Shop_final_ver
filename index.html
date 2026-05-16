@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>L'eclat</title>
+    <link rel="icon" href="icons/Leclat_icon.png" type="x/icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_index.css" />
+    <link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="items.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <canvas
+      id="gradient"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      "
+    >
+    </canvas>
+
+    <header>
+      <div class="header_container glass">
+        <h1>
+          <a href="index.html">L'éclat</a>
+        </h1>
+        <nav>
+  <a href="catalog.html">Каталог</a>
+  <a href="favorites.html">Избранное</a>
+  <a href="cart.html">Корзина</a>
+  <a href="profile.html">Личный кабинет</a>
+</nav>
+       <div class="icons">
+  <a href="favorites.html">
+    <img src="icons/Favorite_white.svg" alt="Избранное" />
+  </a>
+  <a href="cart.html">
+    <img src="icons/Shopping Bag.svg" alt="Корзина" />
+  </a>
+</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="carousel_container">
+        <div class="carousel_slides">
+          <div class="carousel_slide active">
+            <img src="img/carousel_img_1.png" alt="" />
+          </div>
+          <div class="carousel_slide"></div>
+          <div class="carousel_slide"></div>
+          <div class="carousel_slide"></div>
+          <div class="carousel_slide"></div>
+
+          <div class="carousel_text glass">
+            <h1>Новинки парфюмерии</h1>
+            <p>Популярные ароматы 2026</p>
+          </div>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <button class="carousel_btn prev_btn glass">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path
+              fill="white"
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </button>
+
+        <button class="carousel_btn next_btn glass">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path
+              fill="white"
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="items_block">
+        <h1 class="text_popular">Популярные товары</h1>
+
+        <div class="items_container">
+          <div class="item glass">
+            <img
+              class="favorite_img"
+              src="icons/Favorite_black.svg"
+              alt="favorite"
+            />
+            <img calss="item_img" src="img/items/item_1.png" alt="" />
+            <div class="text_section">
+              <h1>
+                Туалетная вода <br />
+                <b>DOLCE & GABANNA</b>
+              </h1>
+              <p>16590 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="item glass">
+            <img
+              class="favorite_img"
+              src="icons/Favorite_black.svg"
+              alt="favorite"
+            />
+            <img calss="item_img" src="img/items/item_2.png" alt="" />
+            <div class="text_section">
+              <h1>
+                Помада для губ <br />
+                <b>ARTDECO perfect color</b>
+              </h1>
+              <p>1770 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="item glass">
+            <img
+              class="favorite_img"
+              src="icons/Favorite_black.svg"
+              alt="favorite"
+            />
+            <img calss="item_img" src="img/items/item_3.png" alt="" />
+            <div class="text_section">
+              <h1>
+                Мусс для волос <br />
+                <b>HEDO wonder</b>
+              </h1>
+              <p>2032 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="item glass">
+            <img
+              class="favorite_img"
+              src="icons/Favorite_black.svg"
+              alt="favorite"
+            />
+            <img calss="item_img" src="img/items/item_4.png" alt="" />
+            <div class="text_section">
+              <h1>
+                Туалетная вода <br />
+                <b>BvlgariOmnia Amethyste</b>
+              </h1>
+              <p>7740 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="item glass">
+            <img
+              class="favorite_img"
+              src="icons/Favorite_black.svg"
+              alt="favorite"
+            />
+            <img calss="item_img" src="img/items/item_5.png" alt="" />
+            <div class="text_section">
+              <h1>
+                Лак для ногтей <br />
+                <b>ESSENCE gel nail polish</b>
+              </h1>
+              <p>221 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="item glass">
+            <img
+              class="favorite_img"
+              src="icons/Favorite_black.svg"
+              alt="favorite"
+            />
+            <img calss="item_img" src="img/items/item_6.png" alt="" />
+            <div class="text_section">
+              <h1>
+                Тушь ресниц <br />
+                <b>MIXIT magnif’eye</b>
+              </h1>
+              <p>603 ₽</p>
+              <button>В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_container glass">
+        <div class="information">
+          <div class="information_block info">
+            <h1>L'eclat</h1>
+            <p>
+              Косметика, парфюмерия и уход премиум-класса — дополните свой образ
+              роскошью
+            </p>
+          </div>
+          <div class="information_block contacts">
+            <h1>Контакты</h1>
+            <ul>
+              <li>
+                <a href="">+7 (4942) 123-456</a>
+              </li>
+              <li>
+                <a href="">info@leclat.ru</a>
+              </li>
+            </ul>
+          </div>
+          <div class="information_block socials">
+            <h1>Соцсети</h1>
+            <ul>
+              <li>
+                <a href="">VK</a>
+              </li>
+              <li>
+                <a href="">Telegram</a>
+              </li>
+              <li>
+                <a href="">Max</a>
+              </li>
+            </ul>
+          </div>
+          <div class="information_block information_nav">
+            <h1>Разделы</h1>
+            <ul>
+              <li>
+                <a href="index.html">Главная</a>
+              </li>
+              <li>
+                <a href="">Каталог</a>
+              </li>
+              <li>
+                <a href="">Избранное</a>
+              </li>
+              <li>
+                <a href="">Корзина</a>
+              </li>
+              <li>
+                <a href="profile.html">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rules">
+          <p>© 2026 L'eclat. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@firecms/neat": "https://unpkg.com/@firecms/neat@latest/dist/index.js"
+        }
+      }
+    </script>
+    <script src="gradient.js" type="module"></script>
+  </body>
+</html>
